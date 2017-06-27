@@ -6,7 +6,7 @@
       raw: sudo bash -c "test -e /usr/bin/python || (apt -y update && apt -y install python-minimal aptitude)"
     - name: gather facts
       setup:
-    - name: faz apt-update e upgrade dos pacotes
+    - name: faz apt update e upgrade dos pacotes
       apt:
         upgrade: yes
         update_cache: yes
